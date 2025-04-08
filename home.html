@@ -164,6 +164,36 @@
             background-color: #094f5a;
             padding: 10px;
         }
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.header-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Adjust the logo to account for new buttons */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: auto; /* This pushes everything else to the right */
+}
     </style>
 </head>
 <body>
@@ -172,6 +202,11 @@
             <a href="home.html" style="text-decoration: none;">
                 <img src="logo.jpeg" alt="Logo">
             </a>
+<div class="header-buttons">
+    <button class="header-btn">Dashboard</button>
+    <button class="header-btn">Resources</button>
+    <button class="header-btn">Support</button>
+</div>
         </div>
         <div class="right-section">
             <button class="sign-out">Sign Out</button>
